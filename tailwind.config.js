@@ -11,6 +11,7 @@ module.exports = {
 				turkey: "url('./images/turkey.jpg')",
 				hawaii: "url('./images/hawaii.webp')",
 				hawaii2: "url('./images/huwaii2.jpg')",
+				partnership: "url('./images/getInvolve.jpg')",
 			},
 		},
 	},
