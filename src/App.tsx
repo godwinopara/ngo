@@ -1,4 +1,5 @@
 import Catelog from "./components/Catelog";
+import GetUpdate from "./components/GetUpdate";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Partnership from "./components/Partnership";
@@ -14,6 +15,7 @@ function App() {
 			<Catelog />
 			<Services />
 			<Partnership />
+			<GetUpdate />
 		</div>
 	);
 }
