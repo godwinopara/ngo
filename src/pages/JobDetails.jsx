@@ -7,11 +7,11 @@ const JobDetails = () => {
 	return (
 		<>
 			<section>
-				<div className="px-20 bg-[#5E6D80] text-white">
+				<div className="px-5 lg:px-20 bg-[#5E6D80] text-white">
 					<div>
 						<div className="py-10">
-							<h1 className="text-4xl ">{jobData[jobId].position}</h1>
-							<p className="text-xl">{jobData[jobId].location}</p>
+							<h1 className="text-3xl lg:text-4xl ">{jobData[jobId].position}</h1>
+							<p className="mt-5 lg:mt-0 text-xl">{jobData[jobId].location}</p>
 							<Link to="/application">
 								<button className="bg-[#0562af] text-white  py-3 cursor-pointer px-10 mt-6 text-xl">
 									Apply Now
@@ -20,8 +20,8 @@ const JobDetails = () => {
 						</div>
 					</div>
 				</div>
-				<div className="px-20 mt-10">
-					<div className="w-[50%]">
+				<div className="px-5 lg:px-20 mt-10">
+					<div className="lg:w-[50%]">
 						<div className="flex justify-between items-center mb-1">
 							<div className="font-bold w-full"> Position Title:</div>
 							<div className="w-full">{jobData[jobId].position}</div>
@@ -35,17 +35,13 @@ const JobDetails = () => {
 							<div className="w-full font-bold">Assignment Type:</div>
 							<div className="flex justify-start w-full">Full time</div>
 						</div>
-						<div className="flex justify-between items-center mb-1">
-							<div className="w-full font-bold">Application Requirements:</div>
-							<div className="w-full"> Resume AND cover letter required. </div>
-						</div>
 					</div>
 				</div>
 
-				<div className="px-20 mt-10">
+				<div className="px-5 lg:px-20 mt-10">
 					{/* About HumanityFirst */}
 					<h2 className="font-bold text-xl mb-4">About HumanityFirst:</h2>
-					<p className="w-4/5 text-lg">
+					<p className="lg:w-4/5 text-lg">
 						Humanity is a health-focused relief and development organization that saves lives and
 						improves health for people affected by poverty or disaster. Each year, HumanityFirst
 						reaches 85 countries on average, including the United States, with life-changing health
@@ -55,7 +51,7 @@ const JobDetails = () => {
 					</p>
 				</div>
 
-				<div className="pl-20 pr-40  mt-10">
+				<div className="px-5 lg:pl-20 lg:pr-40  mt-10">
 					<h2 className="font-bold text-xl mb-4">Duties and Responsiblities</h2>
 					<ul>
 						{jobData[jobId].duties.map((duty) => {
@@ -64,7 +60,7 @@ const JobDetails = () => {
 					</ul>
 				</div>
 
-				<div className="pl-20 pr-40 my-10">
+				<div className="px-5 lg:pl-20 lg:pr-40 my-10">
 					<h2 className="font-bold text-xl mb-4">Required Experience</h2>
 					<ul>
 						{jobData[jobId].requirements.map((experience) => {

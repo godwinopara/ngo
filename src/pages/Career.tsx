@@ -34,7 +34,7 @@ const Career = () => {
 										<h3 className="font-bold text-2xl">
 											Inventory Specialist, Patient Assistance Program
 										</h3>
-										<p className="text-lg">Norwalk, CT, United States</p>
+										<p className="text-lg">United States</p>
 									</div>
 									<button className="font-bold text-3xl">
 										<VscArrowRight />
@@ -45,7 +45,7 @@ const Career = () => {
 								<div className="mb-5 bg-white p-5 flex items-center justify-between cursor-pointer">
 									<div>
 										<h3 className="font-bold text-2xl">Nurse Practitioner, Adult</h3>
-										<p className="text-lg">Norwalk, United States</p>
+										<p className="text-lg">United States</p>
 									</div>
 									<button className="font-bold text-3xl">
 										<VscArrowRight />
@@ -85,6 +85,17 @@ const Career = () => {
 									</button>
 								</div>
 							</Link>
+							<div>
+								<p>
+									If your desired job is not listed above, we have other job opening that are not
+									listed here
+								</p>
+								<Link to="/application">
+									<button className="mt-5 lg:mt-0 bg-slate-900 text-white text-xl font-semibold py-4 px-8">
+										Apply Now
+									</button>
+								</Link>
+							</div>
 						</div>
 					</div>
 				</section>

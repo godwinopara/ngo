@@ -5,6 +5,7 @@ import WhatWeDo from "./pages/WhatWeDo";
 import WhereWeWork from "./pages/WhereWeWork";
 import Career from "./pages/Career";
 import CrisisAlert from "./pages/CrisisAlert";
+// import JobDetails from "./pages/JobDetails";
 import JobDetails from "./pages/JobDetails";
 import Application from "./pages/Application";
 

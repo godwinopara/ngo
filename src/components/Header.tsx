@@ -13,7 +13,7 @@ const Header = () => {
 	return (
 		<header className="sticky top-0 bg-white z-40">
 			<nav className="p-5 lg:p-0 flex justify-between items-center max-w-[1400px] mx-auto ">
-				<div className="w-1/2 lg:w-full">
+				<div className="w-1/2 lg:w-[20%]">
 					<Link to="/">
 						<img src={Logo} alt="" className="w-52" />
 					</Link>
@@ -68,7 +68,7 @@ const Header = () => {
 				)}
 
 				<div className="lg:hidden cursor-pointer" onClick={toggleNav}>
-					<FaBars />
+					<FaBars className="text-2xl" />
 				</div>
 			</nav>
 		</header>
