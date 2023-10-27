@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const UrgentCrisis = () => {
 	return (
 		<div className="bg-red-600">
@@ -5,9 +7,11 @@ const UrgentCrisis = () => {
 				<p className="text-2xl mr-5 font-extrabold">
 					<span className="underline">Isreal/Gaza Crisis</span>: HumanityFirst is Responding
 				</p>
-				<button className="mt-5 lg:mt-0 bg-slate-900 text-white text-xl font-semibold py-4 px-8">
-					Donate Now
-				</button>
+				<Link to="/application">
+					<button className="mt-5 lg:mt-0 bg-slate-900 text-white text-xl font-semibold py-4 px-8">
+						Apply Now
+					</button>
+				</Link>
 			</div>
 		</div>
 	);

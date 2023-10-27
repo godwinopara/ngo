@@ -46,14 +46,14 @@ const Application = () => {
 	};
 
 	return (
-		<div className="w-3/5 mx-auto p-10">
+		<div className=" mx-auto p-10 lg:w-3/5">
 			<form onSubmit={handleSubmit}>
 				<h2 className="text-3xl mb-8 font-semibold">Contact Information</h2>
 
 				{/* Contact Details */}
 				<div>
-					<div className="flex mb-5">
-						<div className="w-full mr-10">
+					<div className="lg:flex mb-5">
+						<div className="w-full mb-5 lg:mb-0 lg:mr-10">
 							<label className="block text-lg mb-1">First Name</label>
 							<input
 								type="text"
@@ -72,7 +72,7 @@ const Application = () => {
 							/>
 						</div>
 					</div>
-					<div className="grid grid-cols-2">
+					<div className="lg:grid lg:grid-cols-2">
 						<div>
 							<label className="block mb-2">Email</label>
 							<input
@@ -97,8 +97,8 @@ const Application = () => {
 				{/* ================== Contact Details ======================= */}
 				<div>
 					<h2 className="text-3xl my-8 font-semibold">Contact Details</h2>
-					<div className="flex items-center">
-						<div className="w-full mr-5">
+					<div className="lg:flex items-center">
+						<div className="w-full lg:mr-5">
 							<label className="block mb-2">Address Line</label>
 							<input
 								type="text"
@@ -108,7 +108,7 @@ const Application = () => {
 								onChange={(e) => setAddress(e.target.value)}
 							/>
 						</div>
-						<div className="w-full mr-5">
+						<div className="w-full lg:mr-5">
 							<label className="block mb-2">City</label>
 							<input
 								type="text"
@@ -119,8 +119,8 @@ const Application = () => {
 							/>
 						</div>
 					</div>
-					<div className="flex items-center">
-						<div className="w-full mr-5">
+					<div className="lg:flex items-center">
+						<div className="w-full lg:mr-5">
 							<label className="block mb-2">Country</label>
 							<input
 								type="text"
@@ -141,8 +141,8 @@ const Application = () => {
 							/>
 						</div>
 					</div>
-					<div className="flex items-center">
-						<div className="w-full mr-5">
+					<div className="lg:flex items-center">
+						<div className="w-full lg:mr-5">
 							<label className="block mb-2">Phone</label>
 							<input
 								type="text"
@@ -168,7 +168,7 @@ const Application = () => {
 				{/* =============== Education ================ */}
 				<div>
 					<h2 className="text-2xl font-semibold my-5">Highest Level of Education</h2>
-					<div className="flex items-center mb-5">
+					<div className="lg:flex items-center mb-5">
 						<div className="w-full mr-5">
 							<label htmlFor="" className="block mb-1">
 								Institution

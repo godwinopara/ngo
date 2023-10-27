@@ -35,9 +35,11 @@ const Header = () => {
 					<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 						<Link to="/crisis-alert">Crisis Alert</Link>
 					</li>
-					<button className=" bg-slate-900 text-white font-bold text-md rounded-sm px-8 py-5">
-						Donate Now
-					</button>
+					<Link to="/application">
+						<button className=" bg-slate-900 text-white font-bold text-md rounded-sm px-8 py-5">
+							Apply Now
+						</button>
+					</Link>
 				</ul>
 
 				{showNav && (
@@ -57,9 +59,11 @@ const Header = () => {
 						<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 							<Link to="/crisis-alert">Crisis Alert</Link>
 						</li>
-						<button className=" bg-slate-900 text-white font-bold text-md rounded-sm px-8 py-5">
-							Donate Now
-						</button>
+						<Link to="/application">
+							<button className=" bg-slate-900 text-white font-bold text-md rounded-sm px-8 py-5">
+								Apply Now
+							</button>
+						</Link>
 					</ul>
 				)}
 
