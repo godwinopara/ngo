@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Achievements from "../components/Achievements";
+import ScrollToTop from "react-scroll-to-top";
 
 interface MainLayoutProps {
 	children: JSX.Element;
@@ -13,6 +14,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
 			{children}
 			<Achievements />
 			<Footer />
+			<ScrollToTop smooth />
 		</div>
 	);
 };

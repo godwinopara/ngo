@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Partnership from "../components/Partnership";
 import Services from "../components/Services";
 import UrgentCrisis from "../components/UrgentCrisis";
+import ScrollToTop from "react-scroll-to-top";
 
 const Home = () => {
 	return (
@@ -20,6 +21,7 @@ const Home = () => {
 			<GetUpdate />
 			<Achievements />
 			<Footer />
+			<ScrollToTop smooth />
 		</>
 	);
 };
