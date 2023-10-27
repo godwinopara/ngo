@@ -6,7 +6,7 @@ const Catelog = () => {
 					<div className="absolute h-full  w-full bg-black opacity-50"></div>
 					<div className="text-white z-10 relative text-center">
 						<h4 className=" text-3xl text-amber-400 mb-6">EMERGENCY RESPONSE</h4>
-						<h2 className="font-extrabold text-5xl">Responding to Hawaii WildFires</h2>
+						<h2 className="font-extrabold text-4xl md:text-5xl">Responding to Hawaii WildFires</h2>
 						<button className="bg-red-800 py-5 px-10 mt-6 text-xl">OUR RESPONSE</button>
 					</div>
 				</div>
@@ -16,7 +16,7 @@ const Catelog = () => {
 					<div className="absolute h-full w-full bg-black opacity-40"></div>
 					<div className="text-white z-10 relative text-center">
 						<h4 className=" text-3xl text-amber-400 mb-6">SURVIVORS IN NEED</h4>
-						<h2 className="font-extrabold text-5xl">
+						<h2 className="font-extrabold text-4xl md:text-5xl">
 							Türkiye/Syria
 							<br />
 							Earthquake

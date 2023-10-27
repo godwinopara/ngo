@@ -28,7 +28,7 @@ const Partnership = () => {
 					img={onetime}
 					title="Give A One-Time Gift."
 					desc="Send medicines & aid to those in need."
-					className="w-1/2"
+					className="lg:w-1/2"
 				/>
 				<DonateCard
 					img={monthly}
