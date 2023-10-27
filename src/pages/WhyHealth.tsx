@@ -19,7 +19,7 @@ const WhyHealth = () => {
 					</p>
 				</div>
 
-				<div className="bg-white min-h-screen pt-32 pb-80 px-5 lg:px-0">
+				<div className="bg-white min-h-screen pt-32 pb-80 px-5 md:px-20 lg:px-0">
 					<div className="lg:flex lg:justify-between lg:items-center lg:w-[65%] lg:mx-auto">
 						<h2 className="text-4xl lg:text-6xl leading-tight font-extrabold lg:w-1/2 mb-8">
 							The right to health is the heart of our mission and action at Americares.
@@ -43,8 +43,12 @@ const WhyHealth = () => {
 
 				{/* ========================== HEALTH CARE ====================================== */}
 
-				<div className="px-5 lg:px-0 bg-[#272b32] text-white pt-40 pb-32 relative">
-					<img className=" lg:w-[30%] absolute -top-80 lg:left-[35%]" src={whyhealth1} alt="" />
+				<div className="px-5 md:px-20 lg:px-0 bg-[#272b32] text-white pt-40 pb-32 relative">
+					<img
+						className=" md:w-1/2 md:left-[25%] lg:w-[30%] absolute -top-80 lg:left-[35%]"
+						src={whyhealth1}
+						alt=""
+					/>
 					<div>
 						<h2 className="text-center text-5xl lg:text-6xl font-extrabold mb-16">
 							Health care for all
@@ -79,7 +83,7 @@ const WhyHealth = () => {
 
 				{/* ============================================================== */}
 				<div className="bg-healthhuman min-h-screen py-32">
-					<div className="bg-white h-full lg:w-3/5 mx-auto text-center py-20 px-5 lg:px-32">
+					<div className="bg-white h-full lg:w-3/5 mx-auto text-center py-20 px-5 md:px-20 lg:px-32">
 						<h2 className="text-center font-bold mx-auto mb-10 text-4xl lg:text-6xl lg:w-[85%] ">
 							With good health, families and communities thrive.
 						</h2>
@@ -108,7 +112,7 @@ const WhyHealth = () => {
 						<p className="text-lg ">So many ways to give health. You can choose.</p>
 					</div>
 					<div className="mb-5 lg:m-0 lg:flex lg:justify-between lg:items-center">
-						<div className="mb-10 lg:mb-0 lg:mr-10">
+						<div className="mb-10 mb:w-[200px] lg:mb-0 lg:mr-10">
 							<div className="bg-takeaction1 bg-center bg-cover h-60"></div>
 							<div className="bg-white px-10 pt-10 pb-5 h-80 ">
 								<h3 className="text-3xl font-bold mb-3">Give Monthly</h3>
@@ -118,7 +122,7 @@ const WhyHealth = () => {
 								</Link>
 							</div>
 						</div>
-						<div className=" mb-5 lg:m-0 lg:mr-10">
+						<div className="mb-5 lg:m-0 lg:mr-10">
 							<div className="bg-takeaction1 bg-center bg-cover h-60"></div>
 							<div className="bg-white px-10 pt-10 pb-5 h-80 ">
 								<h3 className="text-3xl font-bold mb-3">Start Your Own Fundraiser</h3>

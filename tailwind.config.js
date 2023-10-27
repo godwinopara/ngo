@@ -20,6 +20,9 @@ module.exports = {
 				workHero: "url('./images/emergency-program.jpg')",
 				career: "url('./images/work-with-us-bg.jpg')",
 			},
+			screens: {
+				md: "767px",
+			},
 		},
 	},
 	plugins: [],

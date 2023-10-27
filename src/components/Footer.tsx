@@ -3,7 +3,7 @@ import logo from "../images/ngologo.svg";
 
 const Footer = () => {
 	return (
-		<footer className="bg-[#272b32] text-white px-5 lg:px-0">
+		<footer className="bg-[#272b32] text-white px-5 md:px-20 lg:px-0">
 			<div className="grid lg:grid-cols-2 items-start gap-16 py-16 max-w-7xl mx-auto">
 				<div className="lg:w-4/5">
 					<div className="border-b border-white pb-8">

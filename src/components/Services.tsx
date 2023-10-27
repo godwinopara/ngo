@@ -7,7 +7,7 @@ const Services = () => {
 		<section className="max-w-4xl mx-auto py-20 text-center">
 			<div></div>
 			<div>
-				<h2 className="text-4xl px-5 lg:text-5xl leading-tight font-extrabold  text-slate-800">
+				<h2 className="text-4xl px-5 md:px-20 lg:text-5xl leading-tight font-extrabold  text-slate-800">
 					HumanityFirst saves lives and improves health for people affected by poverty or disaster
 					so they can reach their <span className="text-red-600">full potential.</span>
 				</h2>
@@ -18,12 +18,12 @@ const Services = () => {
 					development.
 				</p>
 			</div>
-			<div className="px-5 lg:px-0 lg:flex items-center my-10">
-				<div className="mb-10 lg:mb-0 lg:mr-10 w-full border p-5">
+			<div className="px-5  lg:px-0 md:flex items-center my-10">
+				<div className="mb-10 md:mr-3 lg:mb-0  lg:mr-10 w-full border p-5">
 					<img src={emergency} alt="emergency service" />
 					<h3 className="bg-[#efefef] py-4 px-5 font-bold">Emergency Response</h3>
 				</div>
-				<div className="mb-10 lg:mr-10 w-full border p-5">
+				<div className="mb-10 md:mr-3 lg:mr-10 w-full border p-5">
 					<img src={medicalsecurity} alt="medical security" />
 					<h3 className="bg-[#efefef] py-4 px-5 font-bold">Medical Security</h3>
 				</div>

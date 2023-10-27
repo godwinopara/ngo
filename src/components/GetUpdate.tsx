@@ -1,6 +1,6 @@
 const GetUpdate = () => {
 	return (
-		<section className="px-5 py-10 lg:py-0 lg:px-0 flex justify-center flex-col bg-getupdate min-h-[300px] bg-cover bg-right text-center">
+		<section className="px-5 md:px-20 py-10 lg:py-0 lg:px-0 flex justify-center flex-col bg-getupdate min-h-[300px] bg-cover bg-right text-center">
 			<h1 className="font-bold text-4xl mb-5 text-red-900">Get Updates</h1>
 			<p className="lg:w-1/2 mx-auto mb-3">
 				Our donors and partners help our health programs, medicines and supplies reach our neighbors

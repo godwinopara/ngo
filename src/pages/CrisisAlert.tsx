@@ -1,5 +1,5 @@
 import MainLayout from "../layouts/MainLayout";
-import arrow from "../images/arrow.svg";
+// import arrow from "../images/arrow.svg";
 import { VscArrowRight } from "react-icons/vsc";
 
 const CrisisAlert = () => {

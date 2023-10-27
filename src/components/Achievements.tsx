@@ -7,7 +7,7 @@ const Achievements = () => {
 	return (
 		<section className="py-10 lg:py-0">
 			<div className="lg:flex items-center">
-				<div className="px-5 lg:px-0 lg:w-2/5">
+				<div className="px-5 md:px-20 lg:px-0 lg:w-2/5">
 					<h2 className="font-bold text-4xl text-center lg:w-3/5 mx-auto mb-5">
 						Health Makes Everything Possible
 					</h2>
@@ -27,7 +27,7 @@ const Achievements = () => {
 					<img src={achievementImg} alt="" />
 				</div>
 			</div>
-			<div className="px-5 lg:px-0 text-center lg:grid lg:grid-cols-3 items-center lg:w-9/12 mx-auto">
+			<div className="px-5 md:px-20 lg:px-0 text-center lg:grid lg:grid-cols-3 items-center lg:w-9/12 mx-auto">
 				<div className="flex justify-center mb-5 lg:mb-0 lg:block">
 					<img src={achievementImg3} alt="" />
 				</div>

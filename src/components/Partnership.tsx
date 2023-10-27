@@ -5,7 +5,7 @@ import onetime from "../images/onetime.png";
 
 const Partnership = () => {
 	return (
-		<section className="bg-partnership bg-center lg:bg-top bg-cover px-5 lg:px-0">
+		<section className="bg-partnership bg-center lg:bg-top bg-cover px-5 md:px-20 lg:px-0">
 			<div className="min-h-screen flex items-center mb-20">
 				<div className="lg:w-1/2 my-auto  text-white text-center">
 					<h2 className="font-extrabold text-5xl mb-5">
