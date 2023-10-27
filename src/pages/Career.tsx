@@ -10,9 +10,9 @@ const Career = () => {
 				<UrgentCrisis />
 				<section className="min-h-[80vh] bg-career bg-center bg-cover relative flex items-center justify-center ">
 					<div className="absolute h-full w-full bg-black opacity-70"></div>
-					<div className="z-20 relative text-center text-white">
-						<h1 className="font-bold text-7xl mb-5">Work With Us</h1>
-						<p className="w-1/2 mx-auto text-xl">
+					<div className="px-5 lg:px-0 z-20 relative text-center text-white">
+						<h1 className="text-5xl font-bold lg:text-7xl mb-5">Work With Us</h1>
+						<p className="lg:w-1/2 mx-auto text-xl">
 							HumanityFirst seeks dedicated professionals who are passionate about global health and
 							emergency response. Our employees and volunteers are committed to saving lives and
 							building healthier futures for people in crisis in the U.S. and around the world.
@@ -21,7 +21,7 @@ const Career = () => {
 						<button className="bg-red-800 py-5 px-10 mt-6 text-xl">View Openings Below</button>
 					</div>
 				</section>
-				<section className="max-w-6xl mx-auto mt-10 ">
+				<section className="px-5 max-w-6xl mx-auto mt-10 lg:px-0">
 					<p className="text-xl">Thank you for your interest in HumanityFirst!</p>
 					<p></p>
 

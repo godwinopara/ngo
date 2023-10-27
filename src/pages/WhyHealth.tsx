@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 const WhyHealth = () => {
 	return (
 		<MainLayout>
-			<section className="bg-achievement bg-no-repeat bg-fixed bg-cover bg-right-top min-h-screen">
-				<div className="w-[45%] ml-8 min-h-screen my-auto flex flex-col justify-center text-white">
-					<h1 className="text-7xl font-extrabold mb-5">
+			<section className="bg-achievement bg-no-repeat bg-fixed bg-cover bg-center lg:bg-right-top min-h-screen">
+				<div className="ml-5 lg:w-[45%] lg:ml-8 min-h-screen my-auto flex flex-col justify-center text-white">
+					<h1 className="text-6xl lg:text-7xl font-extrabold mb-5">
 						Health is a <br />
 						Human Right
 					</h1>
@@ -19,12 +19,12 @@ const WhyHealth = () => {
 					</p>
 				</div>
 
-				<div className="bg-white min-h-screen pt-32 pb-80 ">
-					<div className="flex justify-between items-center w-[65%] mx-auto">
-						<h2 className="text-6xl leading-tight font-extrabold w-1/2">
+				<div className="bg-white min-h-screen pt-32 pb-80 px-5 lg:px-0">
+					<div className="lg:flex lg:justify-between lg:items-center lg:w-[65%] lg:mx-auto">
+						<h2 className="text-4xl lg:text-6xl leading-tight font-extrabold lg:w-1/2 mb-8">
 							The right to health is the heart of our mission and action at Americares.
 						</h2>
-						<p className="w-[50%] text-xl">
+						<p className="lg:w-[50%] text-xl">
 							It is in enshrined in the World Health Organization constitution of 1948, “The
 							enjoyment of the highest attainable standard of health is one of the fundamental
 							rights of every human being…”
@@ -43,16 +43,16 @@ const WhyHealth = () => {
 
 				{/* ========================== HEALTH CARE ====================================== */}
 
-				<div className="bg-[#272b32] text-white pt-40 pb-32 relative">
-					<img className=" w-[30%] absolute -top-80 left-[35%]" src={whyhealth1} alt="" />
+				<div className="px-5 lg:px-0 bg-[#272b32] text-white pt-40 pb-32 relative">
+					<img className=" lg:w-[30%] absolute -top-80 lg:left-[35%]" src={whyhealth1} alt="" />
 					<div>
-						<h2 className="text-center text-6xl font-extrabold mb-16">
+						<h2 className="text-center text-5xl lg:text-6xl font-extrabold mb-16">
 							Health care for all
 							<br />
 							benefits everyone.
 						</h2>
-						<div className="flex  w-[65%] mx-auto">
-							<div className="w-1/2 mr-20">
+						<div className="lg:flex  lg:w-[65%] mx-auto">
+							<div className="lg:w-1/2 lg:mr-20">
 								<p className="text-xl">
 									No person should go without access to quality, affordable health care.
 									<br />
@@ -70,7 +70,7 @@ const WhyHealth = () => {
 									Where a person lives should not dictate the possibility of good health.
 								</p>
 							</div>
-							<div className="w-[50%]">
+							<div className="mt-20 lg:mt-0 lg:w-[50%]">
 								<img src={benefit1} alt="" />
 							</div>
 						</div>
@@ -79,8 +79,8 @@ const WhyHealth = () => {
 
 				{/* ============================================================== */}
 				<div className="bg-healthhuman min-h-screen py-32">
-					<div className="bg-white h-full w-3/5 mx-auto text-center py-20 px-32">
-						<h2 className="text-center font-bold text-6xl w-[85%] mx-auto mb-10">
+					<div className="bg-white h-full lg:w-3/5 mx-auto text-center py-20 px-5 lg:px-32">
+						<h2 className="text-center font-bold mx-auto mb-10 text-4xl lg:text-6xl lg:w-[85%] ">
 							With good health, families and communities thrive.
 						</h2>
 						<h3 className="font-semibold italic text-3xl mb-5">Health is essential.</h3>
@@ -107,8 +107,8 @@ const WhyHealth = () => {
 						<h2 className="text-5xl font-extrabold mb-2">Take Action</h2>
 						<p className="text-lg ">So many ways to give health. You can choose.</p>
 					</div>
-					<div className="flex justify-between items-center">
-						<div className="mr-10">
+					<div className="mb-5 lg:m-0 lg:flex lg:justify-between lg:items-center">
+						<div className="mb-10 lg:mb-0 lg:mr-10">
 							<div className="bg-takeaction1 bg-center bg-cover h-60"></div>
 							<div className="bg-white px-10 pt-10 pb-5 h-80 ">
 								<h3 className="text-3xl font-bold mb-3">Give Monthly</h3>
@@ -118,7 +118,7 @@ const WhyHealth = () => {
 								</Link>
 							</div>
 						</div>
-						<div className="mr-10">
+						<div className=" mb-5 lg:m-0 lg:mr-10">
 							<div className="bg-takeaction1 bg-center bg-cover h-60"></div>
 							<div className="bg-white px-10 pt-10 pb-5 h-80 ">
 								<h3 className="text-3xl font-bold mb-3">Start Your Own Fundraiser</h3>
@@ -129,7 +129,7 @@ const WhyHealth = () => {
 							</div>
 						</div>
 
-						<div className="mr-10">
+						<div className="mb-5 lg:m-0 lg:mr-10">
 							<div className="bg-takeaction1 bg-center bg-cover h-60"></div>
 							<div className="bg-white px-10 pt-10 pb-5 h-80 ">
 								<h3 className="text-3xl font-bold mb-3">Work With Us</h3>

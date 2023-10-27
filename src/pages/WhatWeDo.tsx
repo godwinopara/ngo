@@ -12,7 +12,7 @@ const WhatWeDo = () => {
 		<MainLayout>
 			<>
 				<UrgentCrisis />
-				<section className="grid grid-cols-2 mb-10 pr-8 mt-10">
+				<section className="lg:grid grid-cols-2 mb-10 pr-8 mt-10">
 					<div className="flex">
 						<div className="w-[55%]">
 							<img src={img1} alt="" />
@@ -23,7 +23,7 @@ const WhatWeDo = () => {
 						</div>
 					</div>
 					<div className="ml-10">
-						<h1 className="text-8xl font-bold mb-5">
+						<h1 className="mt-8 lg:mt-8 text-6xl lg:text-8xl font-bold mb-5">
 							What <br />
 							We Do
 						</h1>
@@ -40,13 +40,13 @@ const WhatWeDo = () => {
 
 				<section className="bg-[#272b32] py-32">
 					<div className="max-w-8xl mx-auto text-white px-10">
-						<div className="flex items-center mb-16">
+						<div className="lg:flex items-center mb-16">
 							<div className="w-full">
 								<img src={img4} alt="" />
 							</div>
-							<div className="ml-10">
+							<div className="lg:ml-10">
 								<h2 className="text-4xl mb-2 py-8 font-bold">Emergency Program</h2>
-								<p className="w-4/5 text-xl">
+								<p className="lg:w-4/5 text-xl">
 									Natural disasters, poverty, disease, and civil war impact people around the world.
 									In an emergency, Americares provides quality medical aid, disaster relief and
 									recovery.
@@ -54,26 +54,26 @@ const WhatWeDo = () => {
 								<button className="text-yellow-500 font-bold text-4xl mt-7">Explore Now</button>
 							</div>
 						</div>
-						<div className="flex items-center mb-16">
-							<div className="text-right mr-10">
+						<div className="lg:flex items-center mb-16">
+							<div className="lg:text-right lg:mr-10">
 								<h2 className="text-4xl  py-8 font-bold">Medicine Security</h2>
-								<p className="w-4/5 ml-auto text-xl">
+								<p className="lg:w-4/5 lg:ml-auto text-xl">
 									Nearly 2 billion people in the world cannot get the medicines they need to stay
 									healthy.
 								</p>
 								<button className="text-yellow-500 font-bold text-4xl mt-7">Explore Now</button>
 							</div>
-							<div className="w-[70%]">
+							<div className="mt-10 lg:mt-0 lg:w-[70%]">
 								<img src={img5} alt="" />
 							</div>
 						</div>
-						<div className="flex items-center mb-16">
+						<div className="lg:flex items-center mb-16">
 							<div className="w-full">
 								<img src={img6} alt="" />
 							</div>
-							<div className="ml-10">
+							<div className="lg:ml-10">
 								<h2 className="text-4xl mb-2 py-8 font-bold">Health Service</h2>
-								<p className="w-4/5 text-xl">
+								<p className="lg:w-4/5 text-xl">
 									At Americares-run clinics and those of our partners, we deliver and support
 									quality health services, preventing and treating illness while promoting good
 									health for each patient.
