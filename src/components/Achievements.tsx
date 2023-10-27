@@ -5,14 +5,14 @@ import achievementImg3 from "../images/achievement1.webp";
 
 const Achievements = () => {
 	return (
-		<section>
-			<div className="flex items-center">
-				<div className=" w-2/5">
-					<h2 className="font-bold text-4xl text-center w-3/5 mx-auto mb-5">
+		<section className="py-10 lg:py-0">
+			<div className="lg:flex items-center">
+				<div className="px-5 lg:px-0 lg:w-2/5">
+					<h2 className="font-bold text-4xl text-center lg:w-3/5 mx-auto mb-5">
 						Health Makes Everything Possible
 					</h2>
 					<h3 className="text-center">Our Impact with Your Giving Dollar</h3>
-					<p className="w-[80%] mx-auto text-center mb-5">
+					<p className="lg:w-[80%] mx-auto text-center mb-5">
 						Generous donors make all our achievements possible. We are able to respond to more
 						disasters, expand our health programs and save more lives because of the individuals,
 						foundations and corporations that trust Americares to improve the lives of people in the
@@ -23,15 +23,15 @@ const Achievements = () => {
 						<img src={achievementImg2} alt="" className="w-20 h-20" />
 					</div>
 				</div>
-				<div className="w-3/5">
+				<div className="my-10 lg:my-0 lg:w-3/5">
 					<img src={achievementImg} alt="" />
 				</div>
 			</div>
-			<div className="grid grid-cols-3 items-center w-9/12 mx-auto">
-				<div>
+			<div className="px-5 lg:px-0 text-center lg:grid lg:grid-cols-3 items-center lg:w-9/12 mx-auto">
+				<div className="flex justify-center mb-5 lg:mb-0 lg:block">
 					<img src={achievementImg3} alt="" />
 				</div>
-				<div className="-ml-10 mr-5">
+				<div className="mb-5 lg:mb-0 lg:-ml-10 lg:mr-5 ">
 					<h3 className="font-bold text-3xl">
 						More than 98% of our resources support health programs.
 					</h3>

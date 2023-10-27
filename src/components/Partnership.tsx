@@ -5,14 +5,14 @@ import onetime from "../images/onetime.png";
 
 const Partnership = () => {
 	return (
-		<section className="bg-partnership bg-top bg-cover">
+		<section className="bg-partnership bg-center lg:bg-top bg-cover px-5 lg:px-0">
 			<div className="min-h-screen flex items-center mb-20">
-				<div className="w-1/2 my-auto  text-white text-center">
+				<div className="lg:w-1/2 my-auto  text-white text-center">
 					<h2 className="font-extrabold text-5xl mb-5">
 						<span className="text-amber-500">Easy Ways </span>to <br />
 						Get Involved Now!
 					</h2>
-					<p className="w-3/4 mx-auto text-lg">
+					<p className="lg:w-3/4 mx-auto text-lg">
 						Give health to a child, a parent, a community. Your gift makes it possible for
 						<strong> HumanityFirst </strong>
 						to get medicine and <strong>Critical Care</strong> to families and communities in need.
@@ -23,7 +23,7 @@ const Partnership = () => {
 					<button className="bg-red-800 py-5 px-10 mt-6 text-xl">Learn More</button>
 				</div>
 			</div>
-			<div className="mx-10 pb-10 flex justify-between items-start">
+			<div className="lg:mx-10 pb-10 lg:flex justify-between items-start">
 				<DonateCard
 					img={onetime}
 					title="Give A One-Time Gift."
