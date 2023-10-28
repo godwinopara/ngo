@@ -8,7 +8,7 @@ const Services = () => {
 			<div></div>
 			<div>
 				<h2 className="text-4xl px-5 md:px-20 lg:text-5xl leading-tight font-extrabold  text-slate-800">
-					HumanityFirst saves lives and improves health for people affected by poverty or disaster
+					SoulsAid Global saves lives and improves health for people affected by poverty or disaster
 					so they can reach their <span className="text-red-600">full potential.</span>
 				</h2>
 				<p className="text-xl mt-3 w-9/12 mx-auto">

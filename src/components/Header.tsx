@@ -1,4 +1,4 @@
-import Logo from "../images/ngologo.svg";
+import Logo from "../images/newLogo.svg";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
@@ -12,8 +12,8 @@ const Header = () => {
 
 	return (
 		<header className="sticky top-0 bg-white z-40">
-			<nav className="p-5 lg:p-0 flex justify-between items-center max-w-[1400px] mx-auto ">
-				<div className="w-1/2 lg:w-[20%]">
+			<nav className="px-5 lg:p-0 flex justify-between items-center max-w-[1400px] mx-auto ">
+				<div className="w-1/2 lg:w-[20%] py-3">
 					<Link to="/">
 						<img src={Logo} alt="" className="w-52" />
 					</Link>

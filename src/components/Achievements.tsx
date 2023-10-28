@@ -38,8 +38,8 @@ const Achievements = () => {
 				</div>
 				<div>
 					<p>
-						HumanityFirst efficiency with your charitable dollar is one reason that we’re trusted by
-						donors and consistently receive high marks from charity evaluators.
+						SoulsAid Global efficiency with your charitable dollar is one reason that we’re trusted
+						by donors and consistently receive high marks from charity evaluators.
 					</p>
 				</div>
 			</div>

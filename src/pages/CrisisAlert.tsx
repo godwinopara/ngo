@@ -12,7 +12,7 @@ const CrisisAlert = () => {
 						<p className="text-xl">
 							We respond to an average of 30 natural disasters and humanitarian crises worldwide
 							each year, establish long-term recovery projects and bring disaster preparedness
-							programs to vulnerable communities. Every day, HumanityFirst is ready.
+							programs to vulnerable communities. Every day, SoulsAid Global is ready.
 						</p>
 					</div>
 					<div>

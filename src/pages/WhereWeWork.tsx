@@ -33,8 +33,8 @@ const WhereWeWork = () => {
 					<div className="text-center py-20 px-5 lg:px-0">
 						<h2 className="text-5xl font-bold mb-5">Our Global Strategy</h2>
 						<p className="lg:w-1/2 mx-auto text-xl">
-							HumanityFirst supports local health centers, helping providers meet the needs of their
-							patients and communities—in times of disaster and every day.
+							SoulsAid Global supports local health centers, helping providers meet the needs of
+							their patients and communities—in times of disaster and every day.
 						</p>
 					</div>
 				</section>

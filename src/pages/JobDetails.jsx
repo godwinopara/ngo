@@ -39,15 +39,14 @@ const JobDetails = () => {
 				</div>
 
 				<div className="px-5 lg:px-20 mt-10">
-					{/* About HumanityFirst */}
-					<h2 className="font-bold text-xl mb-4">About HumanityFirst:</h2>
+					<h2 className="font-bold text-xl mb-4">About SoulsAid Global:</h2>
 					<p className="lg:w-4/5 text-lg">
-						Humanity is a health-focused relief and development organization that saves lives and
-						improves health for people affected by poverty or disaster. Each year, HumanityFirst
-						reaches 85 countries on average, including the United States, with life-changing health
-						programs, medicine, medical supplies, and emergency aid. HumanityFirst is one of the
-						world’s leading nonprofit providers of donated medicine and medical supplies. For more
-						information, visit americares.org.
+						SoulsAid Global is a health-focused relief and development organization that saves lives
+						and improves health for people affected by poverty or disaster. Each year, SoulsAid
+						Global reaches 85 countries on average, including the United States, with life-changing
+						health programs, medicine, medical supplies, and emergency aid. SoulsAid Global is one
+						of the world’s leading nonprofit providers of donated medicine and medical supplies. For
+						more information, visit americares.org.
 					</p>
 				</div>
 
@@ -71,7 +70,7 @@ const JobDetails = () => {
 
 				<div className="mb-20">
 					<p className="italic w-4/5 mx-auto">
-						HumanityFirst is an equal opportunity employer. We do not discriminate on the basis of
+						SoulsAid Globalis an equal opportunity employer. We do not discriminate on the basis of
 						race, religion, color, sex, sexual orientation, gender expression, pregnancy or
 						pregnancy-related condition, age, national origin, ancestry, physical or mental
 						disability, genetic information, marital status, veteran status, or any other

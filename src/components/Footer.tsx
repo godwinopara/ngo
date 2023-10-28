@@ -20,12 +20,13 @@ const Footer = () => {
 					</div>
 					<div className="pt-5">
 						<p>
-							HumanityFirst is approved by the Internal Revenue Service as a 501 (C) (3) tax-exempt
-							organization, and all donations are tax deductible to the extent provided by law.
+							SoulsAid Global is approved by the Internal Revenue Service as a 501 (C) (3)
+							tax-exempt organization, and all donations are tax deductible to the extent provided
+							by law.
 							<br />
 							<br />
-							HumanityFirst websites created, owned & operated by HumanityFirst Foundation Stamford
-							CT.
+							SoulsAid Global websites created, owned & operated by SoulsAid Global Foundation
+							Stamford CT.
 							<strong> Privacy Policy, </strong>
 							<strong>Terms and Condition </strong> and
 							<strong> View legal disclosures</strong>
@@ -33,7 +34,7 @@ const Footer = () => {
 					</div>
 					<br />
 					<p>
-						© 2023 HumanityFirst. All Rights Reserved. Health Is On The Way is a trademark of
+						© 2023 SoulsAid Global. All Rights Reserved. Health Is On The Way is a trademark of
 						Tandigm Health, LLC.
 					</p>
 				</div>

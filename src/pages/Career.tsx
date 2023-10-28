@@ -13,8 +13,8 @@ const Career = () => {
 					<div className="px-5 lg:px-0 z-20 relative text-center text-white">
 						<h1 className="text-5xl font-bold lg:text-7xl mb-5">Work With Us</h1>
 						<p className="lg:w-1/2 mx-auto text-xl">
-							HumanityFirst seeks dedicated professionals who are passionate about global health and
-							emergency response. Our employees and volunteers are committed to saving lives and
+							SoulsAid Global seeks dedicated professionals who are passionate about global health
+							and emergency response. Our employees and volunteers are committed to saving lives and
 							building healthier futures for people in crisis in the U.S. and around the world.
 							Check out the list of our open positions by clicking the red button below.
 						</p>
@@ -22,7 +22,7 @@ const Career = () => {
 					</div>
 				</section>
 				<section className="px-5 max-w-6xl mx-auto mt-10 lg:px-0">
-					<p className="text-xl">Thank you for your interest in HumanityFirst!</p>
+					<p className="text-xl">Thank you for your interest in SoulsAid Global!</p>
 					<p></p>
 
 					<div>
