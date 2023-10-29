@@ -7,6 +7,9 @@ import Career from "./pages/Career";
 import CrisisAlert from "./pages/CrisisAlert";
 import JobDetails from "./pages/JobDetails";
 import Application from "./pages/Application";
+import ContactUs from "./pages/ContactUs";
+import About from "./pages/About";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const router = createBrowserRouter([
 	{
@@ -40,6 +43,18 @@ const router = createBrowserRouter([
 	{
 		path: "/application",
 		element: <Application />,
+	},
+	{
+		path: "/contact-us",
+		element: <ContactUs />,
+	},
+	{
+		path: "/about",
+		element: <About />,
+	},
+	{
+		path: "/privacy",
+		element: <PrivacyPolicy />,
 	},
 ]);
 

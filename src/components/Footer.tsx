@@ -10,12 +10,14 @@ const Footer = () => {
 						<div className="w-[200px] inline-block mb-3">
 							<img src={logo} alt="" className="w-full" />
 						</div>
-						<p className="mb-1">88 Hamilton Avenue, Stamford, CT 06902</p>
+						<p className="mb-1">83 W Washington Pl New York, NY 10011</p>
 						<p className="mb-1">
-							<strong>Inquiries:</strong> (203) 658-9500
+							<strong>Inquiries:</strong> +1(423)347-0835
 						</p>
 						<p>
-							<strong>Donations:</strong> (800)905-1082
+							<strong>Donations:</strong> +1(423)347-0835
+							<br />
+							<strong>Email:</strong> contact@soulsaidglobal.com , info@soulsaidglobal.com
 						</p>
 					</div>
 					<div className="pt-5">
@@ -43,10 +45,10 @@ const Footer = () => {
 						<h3 className="mb-3 font-bold">CONTACT</h3>
 						<ul className="pb-6">
 							<li className="mb-1">
-								<Link to="/contact">Contact Us</Link>
+								<Link to="/contact-us">Contact Us</Link>
 							</li>
 							<li>
-								<Link to="/career">Careers</Link>
+								<Link to="/careers">Careers</Link>
 							</li>
 						</ul>
 					</div>

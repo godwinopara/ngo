@@ -19,6 +19,8 @@ module.exports = {
 				takeaction2: "url('./images/takeaction2.jpg')",
 				workHero: "url('./images/emergency-program.jpg')",
 				career: "url('./images/work-with-us-bg.jpg')",
+				aboutbg: "url('./images/aboutus-bg.jpg')",
+				contactBg: "url('./images/contactbg.jpg')",
 			},
 			screens: {
 				md: "767px",
