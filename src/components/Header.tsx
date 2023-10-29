@@ -1,4 +1,4 @@
-import Logo from "../images/newLogo.svg";
+import Logo from "../images/logomain.svg";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
@@ -20,16 +20,16 @@ const Header = () => {
 				</div>
 
 				<ul className="hidden lg:flex justify-between items-center">
-					<li className="p-5 border-r-[1.6px] text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+					<li className="p-5 text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 						<Link to="/why-health">Why Health</Link>
 					</li>
-					<li className="p-5 border-r-[1.6px] text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+					<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 						<Link to="/what-we-do">What We Do</Link>
 					</li>
-					<li className="p-5 border-r-[1.6px] text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+					<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 						<Link to="/where-we-work">Where We Work</Link>
 					</li>
-					<li className="p-5 border-r-[1.6px] text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+					<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 						<Link to="/careers">Careers</Link>
 					</li>
 					<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
@@ -44,16 +44,16 @@ const Header = () => {
 
 				{showNav && (
 					<ul className="absolute left-0 top-20 pl-5 pb-10 w-full bg-white lg:hidden">
-						<li className="p-5 border-r-[1.6px] text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+						<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 							<Link to="/why-health">Why Health</Link>
 						</li>
-						<li className="p-5 border-r-[1.6px] text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+						<li className="p-5 text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 							<Link to="/what-we-do">What We Do</Link>
 						</li>
-						<li className="p-5 border-r-[1.6px] text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+						<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 							<Link to="/where-we-work">Where We Work</Link>
 						</li>
-						<li className="p-5 border-r-[1.6px] text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+						<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 							<Link to="/careers">Careers</Link>
 						</li>
 						<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">

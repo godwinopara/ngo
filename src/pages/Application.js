@@ -4,7 +4,7 @@ import { storage, db } from "../firebase";
 import { addDoc, collection } from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { v4 } from "uuid";
-import logo from "../images/ngologo.svg";
+import logo from "../images/newLogo.svg";
 import Select from "react-select";
 
 const Application = () => {

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../images/ngologo.svg";
+import logo from "../images/logomain-white.svg";
 
 const Footer = () => {
 	return (
@@ -7,8 +7,8 @@ const Footer = () => {
 			<div className="grid lg:grid-cols-2 items-start gap-16 py-16 max-w-7xl mx-auto">
 				<div className="lg:w-4/5">
 					<div className="border-b border-white pb-8">
-						<div className="bg-white inline-block p-3 mb-3">
-							<img src={logo} alt="" />
+						<div className="w-[200px] inline-block mb-3">
+							<img src={logo} alt="" className="w-full" />
 						</div>
 						<p className="mb-1">88 Hamilton Avenue, Stamford, CT 06902</p>
 						<p className="mb-1">
