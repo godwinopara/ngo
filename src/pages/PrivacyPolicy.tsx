@@ -7,39 +7,39 @@ const PrivacyPolicy = () => {
 				<div className="mb-6">
 					<h2 className="font-bold mb-4 text-lg">Privacy Policy</h2>
 					<p>
-						Humanity First is a registered charity (Reg No 1149693), having its main office at Unit
+						SoulsAid Global is a registered charity (Reg No 1149693), having its main office at Unit
 						27, Red Lion Business Park, Surbiton, KT6 7QD. We would like to assure all its
 						supporters, donors, clients, volunteers, professional networks/ individuals and staff
-						that Humanity First is committed to keeping your personal data safe in accordance with
+						that SoulsAid Global is committed to keeping your personal data safe in accordance with
 						the specific laws/ regulations in relation to data protection.
 					</p>
 				</div>
 
 				<div>
 					<h2 className="font-bold my-4 text-lg">The policy covers the following areas:</h2>
-					<p>How Humanity First collects your personal information/ data</p>
+					<p>How SoulsAid Global collects your personal information/ data</p>
 					<br />
 					<p>What type of personal information/ data we collect</p>
 					<br />
-					<p>How Humanity First will use your information/ data</p>
+					<p>How SoulsAid Global will use your information/ data</p>
 					<br />
 					<p>
-						How Humanity First will share your information/ data with any third parties (only if you
-						give your consent)
+						How SoulsAid Global will share your information/ data with any third parties (only if
+						you give your consent)
 					</p>
 					<br />
 					<p>How we will take your consent (you can change your preferences at any time)</p>
 					<br />
-					<p>How Humanity First will store your information in our systems and for how long</p>
+					<p>How SoulsAid Global will store your information in our systems and for how long</p>
 					<br />
 					<p>
-						Humanity First cookies policy (as to how we analysis your information/ data to improve
+						SoulsAid Global cookies policy (as to how we analysis your information/ data to improve
 						our services)
 					</p>
 					<br />
 					<p>
 						In case, if any further information/ clarification is required, kindly e-mail us on
-						info@humanityfirst.org
+						info@soulsaidglobal.org
 					</p>
 				</div>
 
