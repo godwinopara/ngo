@@ -40,26 +40,40 @@ const Footer = () => {
 						Tandigm Health, LLC.
 					</p>
 				</div>
-				<div className="flex gap-8">
-					<div>
-						<h3 className="mb-3 font-bold">CONTACT</h3>
-						<ul className="pb-6">
-							<li className="mb-1">
-								<Link to="/contact-us">Contact Us</Link>
+				<div className="grid grid-cols-3 gap-8 lg:mt-10">
+					<div className="">
+						<ul>
+							<li className="text-md mb-2 font-semibold list-none cursor-pointer hover:text-red-600 hover:underline">
+								<Link to="/why-health">Why Health</Link>
 							</li>
-							<li>
+							<li className="text-md mb-2 font-semibol list-none cursor-pointer hover:text-red-600 hover:underline">
+								<Link to="/what-we-do">What We Do</Link>
+							</li>
+							<li className="text-md mb-2 font-semibold list-none cursor-pointer hover:text-red-600 hover:underline">
+								<Link to="/where-we-work">Where We Work</Link>
+							</li>
+						</ul>
+					</div>
+					<div className="">
+						<ul>
+							<li className="text-md mb-2 font-semibold cursor-pointer hover:text-red-600 hover:underline">
+								<Link to="/crisis-alert">Crisis Alert</Link>
+							</li>
+							<li className="text-md mb-2 font-semibold cursor-pointer hover:text-red-600 hover:underline">
 								<Link to="/careers">Careers</Link>
 							</li>
 						</ul>
 					</div>
 					<div>
-						<h3 className="mb-3 font-bold">ABOUT</h3>
-						<ul className=" pb-6">
-							<li className="mb-1">
-								<Link to="/privacy">Privacy Policy</Link>
-							</li>
-							<li className="mb-1">
+						<ul>
+							<li className="mb-2  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 								<Link to="/about">About Us</Link>
+							</li>
+							<li className="mb-2 text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+								<Link to="/contact-us">Contact Us</Link>
+							</li>
+							<li className=" mb-2 text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+								<Link to="/privacy">Privacy Policy</Link>
 							</li>
 						</ul>
 					</div>

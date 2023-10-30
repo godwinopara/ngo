@@ -1,16 +1,21 @@
 import aboutBg2 from "../images/aboutbg-2.jpg";
 import aboutBg3 from "../images/aboutbg-3.jpg";
 import MainLayout from "../layouts/MainLayout";
+import dennis from "../images/dennis.jpg";
+import liam from "../images/liam.jpg";
+import agatha from "../images/agatha.jpg";
+import lori from "../images/lori.jpg";
+import chad from "../images/chad.jpg";
 
 const About = () => {
 	return (
 		<MainLayout>
 			<section>
-				<div className="min-h-[400px] bg-aboutbg bg-cover bg-center flex justify-center items-center text-white">
+				<div className="min-h-[300px] bg-aboutbg bg-cover bg-center flex justify-center items-center text-white lg:min-h-[300px]">
 					<h1 className="text-5xl font-bold">ABOUT US</h1>
 				</div>
 
-				<div className="max-w-[1000px] mx-auto grid grid-cols-2 gap-28 my-20">
+				<div className="max-w-[1000px] mx-auto px-8 lg:px-0 md:grid md:grid-cols-2 gap-28 my-20">
 					<div>
 						<div className="h-[1px] w-[60%] bg-red-600"></div>
 						<h2 className="text-3xl font-bold my-5 text-red-600">ABOUT US</h2>
@@ -56,10 +61,10 @@ const About = () => {
 				</div>
 
 				{/* =========== OUR HISTORY =============== */}
-				<div className="max-w-[1000px] mx-auto ">
+				<div className="max-w-[1000px] mx-auto px-8 lg:px-0">
 					<h2 className="text-3xl font-bold my-5 text-red-600">OUR HISTORY</h2>
-					<div className=" grid grid-cols-2 gap-28 mt-10 mb-20">
-						<div>
+					<div className=" md:grid md:grid-cols-2 gap-28 mt-10 mb-20">
+						<div className="mb-5 md:mb-0">
 							<p>
 								SoulsAid Global began to operate in the early 1990 and was formally established
 								under a trust deed as a registered charity with the UK Charities Commission, in
@@ -86,10 +91,10 @@ const About = () => {
 					<img src={aboutBg3} alt="" />
 				</div>
 
-				<div className="max-w-[1000px] mx-auto ">
+				<div className="max-w-[1000px] mx-auto px-8 lg:px-0">
 					<h2 className="text-3xl font-bold my-5 text-red-600">COLLABORATION</h2>
-					<div className=" grid grid-cols-2 gap-28 mt-10 mb-20">
-						<div>
+					<div className="md:grid md:grid-cols-2 gap-28 mt-10 mb-20">
+						<div className="mb-5 lg:mb-0">
 							<p>
 								The regional SoulsAid Global teams aim to deliver outcomes to help low income and
 								vulnerable communities free themselves from poverty. Collaboration is important to
@@ -111,7 +116,7 @@ const About = () => {
 					</div>
 				</div>
 
-				<div className="max-w-[1000px] mx-auto mb-20">
+				<div className="max-w-[1000px] mx-auto mb-20 px-8 lg:px-0">
 					<div className="mb-20">
 						<h2 className="text-3xl font-bold my-5 text-red-600">TEAM MEMBERS</h2>
 						<p>
@@ -133,7 +138,7 @@ const About = () => {
 						</p>
 					</div>
 
-					<div className="grid grid-cols-2 gap-16 items-center mb-20">
+					<div className=" items-center mb-20 lg:px-0 md:grid md:grid-cols-2 md:gap-16">
 						<div>
 							<h2 className="text-3xl font-bold my-5 text-red-600">
 								BOARD OF <br />
@@ -165,11 +170,39 @@ const About = () => {
 					<div>
 						<div className="text-center">
 							<h2 className="text-3xl font-bold my-5 text-red-600">THE MANAGEMENT</h2>
-							<p>
+							<p className="w-4/5 mx-auto">
 								The management of SoulsAid Global is mainly operated by Health Care professionals,
 								Entrepreneurs, Educators, technology expertise and many other professionals, all of
 								whom volunteer their time to serve humanity.
 							</p>
+						</div>
+					</div>
+
+					<div className="grid grid-cols-2 justify-center mx-auto gap-20 my-28">
+						<div className="flex justify-center items-center flex-col">
+							<img src={dennis} alt="" className="w-[70%] " />
+							<h3 className="text-red-600 font-bold text-xl mt-5">DENNIS MAXIMUS</h3>
+							<span className="font-bold">Chairman</span>
+						</div>
+						<div className="flex justify-center items-center flex-col">
+							<img src={liam} alt="" className="w-[70%]" />
+							<h3 className="text-red-600 font-bold text-xl mt-5">LIAM PETERSON</h3>
+							<span className="font-bold">Director Finance</span>
+						</div>
+						<div className="flex justify-center items-center flex-col">
+							<img src={lori} alt="" className="w-[70%]" />
+							<h3 className="text-red-600 font-bold text-xl mt-5">LORI A. KLILE</h3>
+							<span className="font-bold">Director Admin & HR</span>
+						</div>
+						<div className="flex justify-center items-center flex-col">
+							<img src={agatha} alt="" className="w-[70%]" />
+							<h3 className="text-red-600 font-bold text-xl mt-5">AGATHA BEDFORD</h3>
+							<span className="font-bold">Director Logistics</span>
+						</div>
+						<div className="flex justify-center items-center flex-col col-span-2">
+							<img src={chad} alt="" className="w-[30%]" />
+							<h3 className="text-red-600 font-bold text-xl mt-5">CHAD MCMILLEN</h3>
+							<span className="font-bold">Director Operations</span>
 						</div>
 					</div>
 				</div>

@@ -9,8 +9,8 @@ const ContactUs = () => {
 					<div className="min-h-[400px] bg-contactBg bg-cover bg-center flex justify-center items-center text-white">
 						<h1 className="text-5xl font-bold">CONTACT US</h1>
 					</div>
-					<div className="max-w-[900px] mx-auto flex items-center justify-center my-32">
-						<div className="mr-20">
+					<div className="max-w-[900px] mx-auto md:flex items-center justify-center my-32 px-8 lg:px-0">
+						<div className="mb-10 md:mb-0 md:mr-20">
 							<div className="">
 								<div className="h-[1px] w-[50%] bg-red-600"></div>
 								<h2 className="text-3xl font-bold my-5 text-red-600">SoulsAid Global</h2>

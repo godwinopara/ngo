@@ -20,6 +20,9 @@ const Header = () => {
 				</div>
 
 				<ul className="hidden lg:flex justify-between items-center">
+					<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+						<Link to="/about">About Us</Link>
+					</li>
 					<li className="p-5 text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 						<Link to="/why-health">Why Health</Link>
 					</li>
@@ -45,6 +48,9 @@ const Header = () => {
 				{showNav && (
 					<ul className="absolute left-0 top-20 pl-5 pb-10 w-full bg-white lg:hidden">
 						<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+							<Link to="/about">About Us</Link>
+						</li>
+						<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 							<Link to="/why-health">Why Health</Link>
 						</li>
 						<li className="p-5 text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
@@ -58,6 +64,9 @@ const Header = () => {
 						</li>
 						<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
 							<Link to="/crisis-alert">Crisis Alert</Link>
+						</li>
+						<li className="p-5  text-md font-semibold cursor-pointer hover:text-red-600 hover:underline">
+							<Link to="/contact">Contact Us</Link>
 						</li>
 						<Link to="/application">
 							<button className=" bg-slate-900 text-white font-bold text-md rounded-sm px-8 py-5">

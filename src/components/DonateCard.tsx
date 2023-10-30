@@ -13,7 +13,7 @@ const DonateCard = ({ img, title, desc, className, btn = "Give Now" }: DonateCar
 			<img
 				src={img}
 				alt=""
-				className="absolute w-2/5 md:w-[30%] -top-[20%] md:-top-[25%]  lg:-top-28 left-[28%] "
+				className="absolute w-2/5 -top-[20%] left-[28%] md:w-[25%] lg:w-1/2 md:left-[35%] md:-top-[22%] lg:left-[28%] xl:w-[35%]"
 			/>
 			<h3 className="font-bold text-4xl mb-5">{title}</h3>
 			<p className={`text-xl mx-auto ${className}`}>{desc}</p>
