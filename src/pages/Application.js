@@ -6,6 +6,8 @@ import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import { v4 } from "uuid";
 import logo from "../images/newLogo.svg";
 import Select from "react-select";
+import Loading from "../components/Loading";
+import Success from "../components/Success";
 
 const Application = () => {
 	const [firstname, setFirstname] = useState("");
@@ -19,11 +21,13 @@ const Application = () => {
 	const [phoneNumber, setPhoneNumber] = useState("");
 	const [gender, setGender] = useState("");
 	const [ethnicity, setEthnicity] = useState("");
-	// const [file, setFile] = useState(null);
 	const [vetran, setVetran] = useState("");
 	const [degree, setDegree] = useState("");
-
 	const [resume, setResume] = useState("");
+	const [file, setFile] = useState(null);
+
+	const [uploadSuccess, setUploadSuccess] = useState(false);
+	const [loading, setLoading] = useState(false);
 
 	const genderSelectOptions = [
 		{ value: "male", label: "Male" },
@@ -60,23 +64,35 @@ const Application = () => {
 	};
 
 	const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-		const file = e.target.files[0];
-		if (file === null) return;
-
-		const fileRef = ref(storage, `resumes/${file.name + v4()}`);
-		uploadBytes(fileRef, file).then((resumeLink) => {
-			alert("image uploaded");
-			getDownloadURL(resumeLink.ref).then((link) => {
-				setResume(link);
-			});
-		});
+		setFile(e.target.files[0]);
 	};
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		const valRef = collection(db, "userData");
-		await addDoc(valRef, { firstname: firstname, lastname: lastname, email: email });
-		alert("data added");
+		setLoading(true);
+
+		const fileRef = ref(storage, `resumes/${file.name + v4()}`);
+		uploadBytes(fileRef, file).then((resumeLink) => {
+			if (resumeLink) {
+				setUploadSuccess(true);
+				setLoading(false);
+			}
+		});
+
+		setFirstname("");
+		setLastname("");
+		setEmail("");
+		setAddress("");
+		setCity("");
+		setState("");
+		setZipcode("");
+		setCountry("");
+		setPhoneNumber("");
+		setGender("");
+		setEthnicity("");
+		setVetran("");
+		setDegree("");
+		setResume("");
 	};
 
 	return (
@@ -96,6 +112,7 @@ const Application = () => {
 									placeholder="firstname"
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setFirstname(e.target.value)}
+									required
 								/>
 							</div>
 							<div className="w-full">
@@ -105,6 +122,7 @@ const Application = () => {
 									placeholder="firstname"
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setLastname(e.target.value)}
+									required
 								/>
 							</div>
 						</div>
@@ -116,6 +134,7 @@ const Application = () => {
 									placeholder="Email"
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setEmail(e.target.value)}
+									required
 								/>
 							</div>
 						</div>
@@ -125,7 +144,7 @@ const Application = () => {
 					<div>
 						<div className="my-8">
 							<label className="block mb-2 text-2xl">Upload Resume</label>
-							<input type="file" onChange={handleFileUpload} />
+							<input type="file" onChange={handleFileUpload} required />
 						</div>
 					</div>
 
@@ -277,6 +296,9 @@ const Application = () => {
 					</div>
 				</form>
 			</div>
+
+			{loading && !uploadSuccess && <Loading />}
+			{!loading && uploadSuccess && <Success />}
 		</section>
 	);
 };
