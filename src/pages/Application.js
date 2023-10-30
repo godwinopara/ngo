@@ -17,7 +17,6 @@ const Application = () => {
 	const [city, setCity] = useState("");
 	const [state, setState] = useState("");
 	const [zipcode, setZipcode] = useState("");
-	const [country, setCountry] = useState("USA");
 	const [phoneNumber, setPhoneNumber] = useState("");
 	const [gender, setGender] = useState("");
 	const [ethnicity, setEthnicity] = useState("");
@@ -86,7 +85,6 @@ const Application = () => {
 		setCity("");
 		setState("");
 		setZipcode("");
-		setCountry("");
 		setPhoneNumber("");
 		setGender("");
 		setEthnicity("");
@@ -181,7 +179,6 @@ const Application = () => {
 									name=""
 									id=""
 									className="border border-black w-full h-10 rounded px-2"
-									onChange={(e) => setCountry(e.target.value)}
 								/>
 							</div>
 							<div className="w-full">
