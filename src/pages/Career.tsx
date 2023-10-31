@@ -18,10 +18,12 @@ const Career = () => {
 							building healthier futures for people in crisis in the U.S. and around the world.
 							Check out the list of our open positions by clicking the red button below.
 						</p>
-						<button className="bg-red-800 py-5 px-10 mt-6 text-xl">View Openings Below</button>
+						<a href="#jobs">
+							<button className="bg-red-800 py-5 px-10 mt-6 text-xl">View Openings Below</button>
+						</a>
 					</div>
 				</section>
-				<section className="px-5 max-w-6xl mx-auto mt-10 lg:px-0">
+				<section className="px-5 max-w-6xl mx-auto mt-10 lg:px-0" id="jobs">
 					<p className="text-xl">Thank you for your interest in SoulsAid Global!</p>
 					<p></p>
 

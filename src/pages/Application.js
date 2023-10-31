@@ -9,6 +9,7 @@ import Loading from "../components/Loading";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 
 const Application = () => {
 	const [firstname, setFirstname] = useState("");
@@ -115,7 +116,10 @@ const Application = () => {
 
 	return (
 		<section className="py-8 text-[#808080] max-w-[900px] mx-auto">
-			<img src={logo} alt="logo" className="w-[20%] mb-10" />
+			<Link to="/">
+				<img src={logo} alt="logo" className="w-[20%] mb-10" />
+			</Link>
+
 			<div>
 				<h2 className="font-bold text-2xl mb-8">SUBMIT YOUR APPLICATION</h2>
 
