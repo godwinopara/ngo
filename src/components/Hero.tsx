@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
 	return (
 		<div className="relative">
@@ -10,7 +12,9 @@ const Hero = () => {
 						Crisis <br />
 					</h2>
 					<p className="mt-5 text-2xl">Humanitarian needs intensify</p>
-					<button className="bg-red-800 py-5 px-10 mt-6 text-xl">OUR RESPONSE</button>
+					<Link to="/crisis/isreal">
+						<button className="bg-red-800 py-5 px-10 mt-6 text-xl">OUR RESPONSE</button>
+					</Link>
 				</div>
 			</div>
 		</div>

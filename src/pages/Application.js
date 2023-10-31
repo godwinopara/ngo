@@ -1,5 +1,4 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 import { storage, db } from "../firebase";
 import { addDoc, collection } from "firebase/firestore";
 import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
@@ -7,25 +6,27 @@ import { v4 } from "uuid";
 import logo from "../images/newLogo.svg";
 import Select from "react-select";
 import Loading from "../components/Loading";
-import Success from "../components/Success";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Application = () => {
 	const [firstname, setFirstname] = useState("");
 	const [lastname, setLastname] = useState("");
 	const [email, setEmail] = useState("");
 	const [address, setAddress] = useState("");
+	const [country, setCountry] = useState("");
 	const [city, setCity] = useState("");
 	const [state, setState] = useState("");
 	const [zipcode, setZipcode] = useState("");
 	const [phoneNumber, setPhoneNumber] = useState("");
 	const [gender, setGender] = useState("");
 	const [ethnicity, setEthnicity] = useState("");
+	const [language, setLanguage] = useState("");
 	const [vetran, setVetran] = useState("");
 	const [degree, setDegree] = useState("");
 	const [resume, setResume] = useState("");
-	const [file, setFile] = useState(null);
 
-	const [uploadSuccess, setUploadSuccess] = useState(false);
 	const [loading, setLoading] = useState(false);
 
 	const genderSelectOptions = [
@@ -58,25 +59,43 @@ const Application = () => {
 		{ value: "Doctoral", label: "Doctor's Degree" },
 	];
 
-	const handleGenderChange = (e) => {
-		setGender(e.target.value);
-	};
-
 	const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-		setFile(e.target.files[0]);
+		const file = e.target.files[0];
+
+		const fileRef = ref(storage, `resumes/${file.name + v4()}`);
+		uploadBytes(fileRef, file).then((resumeLink) => {
+			console.log("resumeLink", resumeLink);
+			getDownloadURL(resumeLink.ref).then((url) => {
+				setResume(url);
+			});
+		});
 	};
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setLoading(true);
 
-		const fileRef = ref(storage, `resumes/${file.name + v4()}`);
-		uploadBytes(fileRef, file).then((resumeLink) => {
-			if (resumeLink) {
-				setUploadSuccess(true);
-				setLoading(false);
-			}
+		const valRef = collection(db, "userData");
+		await addDoc(valRef, {
+			firstname: firstname,
+			lastname: lastname,
+			email: email,
+			city: city,
+			country: country,
+			state: state,
+			zipcode: zipcode,
+			address: address,
+			language: language,
+			phoneNumber: phoneNumber,
+			gender: gender,
+			ethnicity: ethnicity,
+			vetran: vetran,
+			degree: degree,
+			imgUrl: resume,
 		});
+
+		setLoading(false);
+		toast.success("Application Submitted Successfully");
 
 		setFirstname("");
 		setLastname("");
@@ -86,6 +105,7 @@ const Application = () => {
 		setState("");
 		setZipcode("");
 		setPhoneNumber("");
+		setLanguage("");
 		setGender("");
 		setEthnicity("");
 		setVetran("");
@@ -95,7 +115,7 @@ const Application = () => {
 
 	return (
 		<section className="py-8 text-[#808080] max-w-[900px] mx-auto">
-			<img src={logo} className="w-[20%] mb-10" />
+			<img src={logo} alt="logo" className="w-[20%] mb-10" />
 			<div>
 				<h2 className="font-bold text-2xl mb-8">SUBMIT YOUR APPLICATION</h2>
 
@@ -108,6 +128,7 @@ const Application = () => {
 								<input
 									type="text"
 									placeholder="firstname"
+									value={firstname}
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setFirstname(e.target.value)}
 									required
@@ -117,7 +138,8 @@ const Application = () => {
 								<label className="block mb-2">Last Name</label>
 								<input
 									type="text"
-									placeholder="firstname"
+									placeholder="lastname"
+									value={lastname}
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setLastname(e.target.value)}
 									required
@@ -130,6 +152,7 @@ const Application = () => {
 								<input
 									type="text"
 									placeholder="Email"
+									value={email}
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setEmail(e.target.value)}
 									required
@@ -151,11 +174,10 @@ const Application = () => {
 						<h2 className="text-3xl my-8 font-semibold">Contact Details</h2>
 						<div className="lg:flex items-center">
 							<div className="w-full lg:mr-5">
-								<label className="block mb-2">Address Line</label>
+								<label className="block mb-2">Address</label>
 								<input
 									type="text"
-									name=""
-									id=""
+									value={address}
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setAddress(e.target.value)}
 								/>
@@ -164,8 +186,7 @@ const Application = () => {
 								<label className="block mb-2">City</label>
 								<input
 									type="text"
-									name=""
-									id=""
+									value={city}
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setCity(e.target.value)}
 								/>
@@ -176,17 +197,16 @@ const Application = () => {
 								<label className="block mb-2">Country</label>
 								<input
 									type="text"
-									name=""
-									id=""
+									value={country}
 									className="border border-black w-full h-10 rounded px-2"
+									onChange={(e) => setCountry(e.target.value)}
 								/>
 							</div>
 							<div className="w-full">
 								<label className="block mb-2">State</label>
 								<input
 									type="text"
-									name=""
-									id=""
+									value={state}
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setState(e.target.value)}
 								/>
@@ -197,8 +217,7 @@ const Application = () => {
 								<label className="block mb-2">Phone</label>
 								<input
 									type="text"
-									name=""
-									id=""
+									value={phoneNumber}
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setPhoneNumber(e.target.value)}
 								/>
@@ -207,8 +226,7 @@ const Application = () => {
 								<label className="block mb-2">Zip Code</label>
 								<input
 									type="text"
-									name=""
-									id=""
+									value={zipcode}
 									className="border border-black w-full h-10 rounded px-2"
 									onChange={(e) => setZipcode(e.target.value)}
 								/>
@@ -220,22 +238,15 @@ const Application = () => {
 					<div>
 						<h2 className="text-2xl font-semibold my-5">Highest Level of Education</h2>
 						<div className="lg:flex items-center mb-5">
-							<div className="w-full mr-5">
-								<label htmlFor="" className="block mb-1">
-									Institution
-								</label>
-								<input
-									type="text"
-									name=""
-									id=""
-									className="border border-black w-full h-10 rounded px-2"
-								/>
-							</div>
 							<div className="w-full">
 								<label htmlFor="" className="block mb-1">
 									Degree
 								</label>
-								<Select defaultValue={degree} options={degreeSelectOption} />
+								<Select
+									defaultValue={degree}
+									options={degreeSelectOption}
+									onChange={(e) => setDegree(e.value)}
+								/>
 							</div>
 						</div>
 					</div>
@@ -244,8 +255,8 @@ const Application = () => {
 						<div className="grid grid-cols-2">
 							<input
 								type="text"
-								name=""
-								id=""
+								value={language}
+								onChange={(e) => setLanguage(e.target.value)}
 								className="border border-black w-full h-10 rounded px-2"
 							/>
 						</div>
@@ -269,19 +280,34 @@ const Application = () => {
 								<label htmlFor="" className="block text-xl w-[30%] mb-1">
 									Gender
 								</label>
-								<Select className="w-[70%]" defaultValue={gender} options={genderSelectOptions} />
+								<Select
+									className="w-[70%]"
+									defaultValue={gender}
+									options={genderSelectOptions}
+									onChange={(e) => setGender(e.value)}
+								/>
 							</div>
 							<div className="flex items-center mb-8">
 								<label htmlFor="" className="block text-xl w-[30%] mb-1">
 									Race
 								</label>
-								<Select className="w-[70%]" defaultValue={ethnicity} options={raceSelectOption} />
+								<Select
+									className="w-[70%]"
+									defaultValue={ethnicity}
+									options={raceSelectOption}
+									onChange={(e) => setEthnicity(e.value)}
+								/>
 							</div>
 							<div className="flex items-center mb-8">
 								<label htmlFor="" className="block text-xl w-[30%] mb-1">
 									Vetran
 								</label>
-								<Select className="w-[70%]" defaultValue={vetran} options={vetranSelectOption} />
+								<Select
+									className="w-[70%]"
+									defaultValue={vetran}
+									options={vetranSelectOption}
+									onChange={(e) => setVetran(e.value)}
+								/>
 							</div>
 						</div>
 
@@ -294,8 +320,19 @@ const Application = () => {
 				</form>
 			</div>
 
-			{loading && !uploadSuccess && <Loading />}
-			{!loading && uploadSuccess && <Success />}
+			{loading && <Loading />}
+			<ToastContainer
+				position="top-right"
+				autoClose={5000}
+				hideProgressBar={false}
+				newestOnTop={false}
+				closeOnClick
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+				theme="light"
+			/>
 		</section>
 	);
 };

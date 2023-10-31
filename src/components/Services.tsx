@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import emergency from "../images/emergency.webp";
 import healthservice from "../images/healthservice.webp";
 import medicalsecurity from "../images/medicalsecurity.webp";
@@ -21,15 +22,21 @@ const Services = () => {
 			<div className="px-5  lg:px-0 md:flex items-center my-10">
 				<div className="mb-10 md:mr-3 lg:mb-0  lg:mr-10 w-full border p-5">
 					<img src={emergency} alt="emergency service" />
-					<h3 className="bg-[#efefef] py-4 px-5 font-bold">Emergency Response</h3>
+					<Link to="/404">
+						<h3 className="bg-[#efefef] py-4 px-5 font-bold">Emergency Response</h3>
+					</Link>
 				</div>
 				<div className="mb-10 md:mr-3 lg:mr-10 w-full border p-5">
 					<img src={medicalsecurity} alt="medical security" />
-					<h3 className="bg-[#efefef] py-4 px-5 font-bold">Medical Security</h3>
+					<Link to="/404">
+						<h3 className="bg-[#efefef] py-4 px-5 font-bold">Medical Security</h3>
+					</Link>
 				</div>
 				<div className="mb-10 lg:mb-0 w-full border p-5">
 					<img src={healthservice} alt="health service" />
-					<h3 className="bg-[#efefef] py-4 px-5 font-bold">Health Service</h3>
+					<Link to="/404">
+						<h3 className="bg-[#efefef] py-4 px-5 font-bold">Health Service</h3>
+					</Link>
 				</div>
 			</div>
 		</section>

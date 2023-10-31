@@ -10,6 +10,10 @@ import Application from "./pages/Application";
 import ContactUs from "./pages/ContactUs";
 import About from "./pages/About";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import AfghanistanCrisis from "./pages/AfghanistanCrisis";
+import IsrealCrisis from "./pages/IsrealCrisis";
+import TurkeyCrisis from "./pages/TurkeyCrisis";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([
 	{
@@ -55,6 +59,22 @@ const router = createBrowserRouter([
 	{
 		path: "/privacy",
 		element: <PrivacyPolicy />,
+	},
+	{
+		path: "/crisis/afghanistan",
+		element: <AfghanistanCrisis />,
+	},
+	{
+		path: "/crisis/isreal",
+		element: <IsrealCrisis />,
+	},
+	{
+		path: "/crisis/turkey",
+		element: <TurkeyCrisis />,
+	},
+	{
+		path: "/404",
+		element: <NotFound />,
 	},
 ]);
 

@@ -15,8 +15,8 @@ const Achievements = () => {
 					<p className="lg:w-[80%] mx-auto text-center mb-5">
 						Generous donors make all our achievements possible. We are able to respond to more
 						disasters, expand our health programs and save more lives because of the individuals,
-						foundations and corporations that trust Americares to improve the lives of people in the
-						United States and around the world.
+						foundations and corporations that trust SoulsAid Global to improve the lives of people
+						in the United States and around the world.
 					</p>
 					<div className="flex justify-center">
 						<img src={achievementImg1} alt="" className="w-20 h-20" />

@@ -1,8 +1,3 @@
-import DonateCard from "./DonateCard";
-import monthly from "../images/monthly.png";
-import donors from "../images/donors.png";
-import onetime from "../images/onetime.png";
-
 const Partnership = () => {
 	return (
 		<section className="bg-partnership bg-center lg:bg-top bg-cover px-5 md:px-20 lg:px-0">
@@ -20,10 +15,9 @@ const Partnership = () => {
 						deliver donated medicine and medical supplies to a trusted network of locally-based
 						providers, the impact of your gift is multiplied many times over.
 					</p>
-					<button className="bg-red-800 py-5 px-10 mt-6 text-xl">Learn More</button>
 				</div>
 			</div>
-			<div className="lg:mx-10 pb-10 lg:flex justify-between items-start">
+			{/* <div className="lg:mx-10 pb-10 lg:flex justify-between items-start">
 				<DonateCard
 					img={onetime}
 					title="Give A One-Time Gift."
@@ -41,7 +35,7 @@ const Partnership = () => {
 					desc="Your DAF is a convenient way to support vulnerable families all over the world."
 					className="mb-5"
 				/>
-			</div>
+			</div> */}
 		</section>
 	);
 };
