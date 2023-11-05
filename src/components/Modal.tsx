@@ -14,7 +14,7 @@ const Modal = ({ closeModal }: ModalIProp) => {
 				<div className="bg-[#000000cc] fixed flex justify-center items-center top-0 w-full z-40 left-0 min-h-screen ">
 					<div className="bg-[#f2f2f2] relative flex flex-col items-center justify-center h-[300px] mx-8 lg:w-[500px] px-5">
 						<p className="text-2xl lg:text-3xl text-center font-semibold mb-8">
-							We currently have 253 Job Openings
+							We currently have 255 Job Openings
 						</p>
 						<Link to="/application">
 							<button className=" bg-red-600 text-white font-bold text-md rounded-sm px-8 py-5">

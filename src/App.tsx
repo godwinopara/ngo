@@ -73,7 +73,7 @@ const router = createBrowserRouter([
 		element: <TurkeyCrisis />,
 	},
 	{
-		path: "/beneficiary-enrollment",
+		path: "/beneficiaryenrollment",
 		element: <Military />,
 	},
 	{
