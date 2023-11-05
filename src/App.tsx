@@ -14,7 +14,7 @@ import AfghanistanCrisis from "./pages/AfghanistanCrisis";
 import IsrealCrisis from "./pages/IsrealCrisis";
 import TurkeyCrisis from "./pages/TurkeyCrisis";
 import NotFound from "./pages/NotFound";
-
+import Military from "./pages/Military";
 const router = createBrowserRouter([
 	{
 		path: "/",
@@ -71,6 +71,10 @@ const router = createBrowserRouter([
 	{
 		path: "/crisis/turkey",
 		element: <TurkeyCrisis />,
+	},
+	{
+		path: "/beneficiary-enrollment",
+		element: <Military />,
 	},
 	{
 		path: "/404",
