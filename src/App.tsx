@@ -15,6 +15,7 @@ import IsrealCrisis from "./pages/IsrealCrisis";
 import TurkeyCrisis from "./pages/TurkeyCrisis";
 import NotFound from "./pages/NotFound";
 import Military from "./pages/Military";
+
 const router = createBrowserRouter([
 	{
 		path: "/",

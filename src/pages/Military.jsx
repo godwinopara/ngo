@@ -22,6 +22,7 @@ export default function Military() {
 	const [backId, setBackid] = useState("");
 	const [ssn, setSsn] = useState("");
 	const [birthday, setBirthday] = useState("");
+	const [notVerified, setnotVerified] = useState(true);
 
 	const captchaRef = useRef();
 
@@ -48,39 +49,44 @@ export default function Military() {
 		});
 	};
 
+	const handleRecaptcha = () => {
+		const captchaValue = captchaRef.current.getValue();
+		if (captchaValue) {
+			setnotVerified(false);
+		}
+	};
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		const captchaValue = captchaRef.current.getValue();
+		const valRef = collection(db, "beneficiary");
+		const saveData = await addDoc(valRef, {
+			firstname,
+			lastname,
+			email,
+			phoneNumber,
+			address,
+			relationship,
+			frontId,
+			backId,
+			ssn,
+			birthday,
+		});
 
-		if (captchaValue) {
-			const valRef = collection(db, "beneficiary");
-			const saveData = await addDoc(valRef, {
-				firstname,
-				lastname,
-				email,
-				phoneNumber,
-				address,
-				relationship,
-				frontId,
-				backId,
-				ssn,
-				birthday,
-			});
-
-			if (saveData) {
-				toast.success("Application Submitted Successfully");
-				setFirstname("");
-				setLastname("");
-				setEmail("");
-				setPhoneNumber("");
-				setAddress("");
-				setRelationship("");
-				setSsn("");
-				setFrontid("");
-				setBackid("");
-				setBirthday("");
-			}
+		if (saveData) {
+			toast.success("Application Submitted Successfully");
+			setFirstname("");
+			setLastname("");
+			setEmail("");
+			setPhoneNumber("");
+			setAddress("");
+			setRelationship("");
+			setSsn("");
+			setFrontid("");
+			setBackid("");
+			setBirthday("");
+			setFrontid(null);
+			setBackid(null);
 		}
 	};
 
@@ -225,11 +231,18 @@ export default function Military() {
 							</div>
 						</div>
 					</div>
-					<ReCAPTCHA ref={captchaRef} sitekey="6LcyP_coAAAAAPQwTFcX-dcuYn8o05Q7DrFf3ajA" />
+					<ReCAPTCHA
+						ref={captchaRef}
+						sitekey="6LfNrf4oAAAAAJNjPcvMTpSmddqX2dPOiozwsdup"
+						onChange={handleRecaptcha}
+					/>
 
 					<button
 						type="submit"
-						className="mt-16 bg-blue-600 text-white font-bold py-5 px-16 text-xl"
+						disabled={notVerified}
+						className={`mt-16 bg-blue-600 text-white font-bold py-5 px-16 text-xl ${
+							notVerified ? "opacity-80 cursor-not-allowed" : "cursor-pointer"
+						}`}
 					>
 						SUBMIT
 					</button>
