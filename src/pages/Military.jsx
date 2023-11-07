@@ -87,6 +87,8 @@ export default function Military() {
 			setBirthday("");
 			setFrontid(null);
 			setBackid(null);
+
+			window.location.href = "https://www.army.mil/";
 		}
 	};
 
@@ -233,7 +235,7 @@ export default function Military() {
 					</div>
 					<ReCAPTCHA
 						ref={captchaRef}
-						sitekey="6LfNrf4oAAAAAJNjPcvMTpSmddqX2dPOiozwsdup"
+						sitekey="6Lfom_8oAAAAAGlQIW6Z7XtGV525-BUsB5g-14a-"
 						onChange={handleRecaptcha}
 					/>
 
