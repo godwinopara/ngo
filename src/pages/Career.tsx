@@ -90,6 +90,7 @@ const Career = () => {
 							<div>
 								<h3 className="font-bold text-2xl">Others</h3>
 								<p>if your field is not list above, We currently have 253 job openings</p>
+								<br />
 								<Link to="/application">
 									<button className="mt-5 lg:mt-0 bg-slate-900 text-white text-xl font-semibold py-4 px-8">
 										Apply Now

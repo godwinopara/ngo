@@ -180,8 +180,8 @@ const About = () => {
 
 					<div className="grid grid-cols-2 justify-center mx-auto gap-20 my-28">
 						<div className="flex justify-center items-center flex-col">
-							<img src={dennis} alt="" className="w-[70%] " />
-							<h3 className="text-red-600 font-bold text-xl mt-5">DENNIS MAXIMUS</h3>
+							<img src={chad} alt="" className="w-[70%]" />
+							<h3 className="text-red-600 font-bold text-xl mt-5">CHAD MCMILLEN</h3>
 							<span className="font-bold">Chairman</span>
 						</div>
 						<div className="flex justify-center items-center flex-col">
@@ -198,11 +198,6 @@ const About = () => {
 							<img src={agatha} alt="" className="w-[70%]" />
 							<h3 className="text-red-600 font-bold text-xl mt-5">AGATHA BEDFORD</h3>
 							<span className="font-bold">Director Logistics</span>
-						</div>
-						<div className="flex justify-center items-center flex-col col-span-2">
-							<img src={chad} alt="" className="w-[30%]" />
-							<h3 className="text-red-600 font-bold text-xl mt-5">CHAD MCMILLEN</h3>
-							<span className="font-bold">Director Operations</span>
 						</div>
 					</div>
 				</div>

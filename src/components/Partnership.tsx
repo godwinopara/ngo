@@ -17,25 +17,6 @@ const Partnership = () => {
 					</p>
 				</div>
 			</div>
-			{/* <div className="lg:mx-10 pb-10 lg:flex justify-between items-start">
-				<DonateCard
-					img={onetime}
-					title="Give A One-Time Gift."
-					desc="Send medicines & aid to those in need."
-					className="lg:w-1/2"
-				/>
-				<DonateCard
-					img={monthly}
-					title="Give Monthly."
-					desc="Let us do the work for you. Become a Hero for Health."
-				/>
-				<DonateCard
-					img={donors}
-					title="Put Your Donor Advised Fund to Work"
-					desc="Your DAF is a convenient way to support vulnerable families all over the world."
-					className="mb-5"
-				/>
-			</div> */}
 		</section>
 	);
 };

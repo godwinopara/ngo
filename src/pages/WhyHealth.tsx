@@ -114,33 +114,24 @@ const WhyHealth = () => {
 					<div className="mb-5 lg:m-0 lg:flex lg:justify-between lg:items-center">
 						<div className="mb-10 mb:w-[200px] lg:mb-0 lg:mr-10">
 							<div className="bg-takeaction1 bg-center bg-cover h-60"></div>
-							<div className="bg-white px-10 pt-10 pb-5 h-80 ">
+							<div className="bg-white px-10 pt-10 pb-5 h-60 ">
 								<h3 className="text-3xl font-bold mb-3">Give Monthly</h3>
 								<p className="text-lg">Become a partner in caring for people in crisis</p>
-								<Link to="#" className="text-[#fcb831] font-bold text-3xl mt-12 block">
-									Learn More
-								</Link>
 							</div>
 						</div>
 						<div className="mb-5 lg:m-0 lg:mr-10">
-							<div className="bg-takeaction1 bg-center bg-cover h-60"></div>
-							<div className="bg-white px-10 pt-10 pb-5 h-80 ">
+							<div className="bg-takeaction2 bg-center bg-cover h-60"></div>
+							<div className="bg-white px-10 pt-10 pb-5 h-60 ">
 								<h3 className="text-3xl font-bold mb-3">Start Your Own Fundraiser</h3>
 								<p className="text-lg">Create your own campaign on Facebook to Give Health</p>
-								<Link to="#" className="text-[#fcb831] font-bold text-3xl mt-12 block">
-									Explore Now
-								</Link>
 							</div>
 						</div>
 
 						<div className="mb-5 lg:m-0 lg:mr-10">
-							<div className="bg-takeaction1 bg-center bg-cover h-60"></div>
-							<div className="bg-white px-10 pt-10 pb-5 h-80 ">
+							<div className="bg-takeaction3 bg-center bg-cover h-60"></div>
+							<div className="bg-white px-10 pt-10 pb-5 h-60 ">
 								<h3 className="text-3xl font-bold mb-3">Work With Us</h3>
 								<p className="text-lg">Check our career and volunteer opportunities</p>
-								<Link to="#" className="text-[#fcb831] font-bold text-3xl mt-12 block">
-									Explore Now
-								</Link>
 							</div>
 						</div>
 					</div>

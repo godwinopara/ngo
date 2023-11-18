@@ -29,11 +29,13 @@ const WhatWeDo = () => {
 						</h1>
 						<p className="text-xl">
 							When people are in crisis, we make sure that health comes first. Our
-							<strong>Emergency Programs</strong>
+							<strong className="text-red-600"> Emergency Programs </strong>
 							help communities prepare for, respond to and recover from disasters. We support
-							<strong> Medicine Security</strong> for millions of people around the world. Our
-							<strong>Health Services</strong> deliver quality health care for people who have none.
-							We create and support sustainable programs that strengthen local health centers.
+							<strong className="text-red-600"> Medicine Security </strong> for millions of people
+							around the world. Our
+							<strong className="text-red-600"> Health Services </strong> deliver quality health
+							care for people who have none. We create and support sustainable programs that
+							strengthen local health centers.
 						</p>
 					</div>
 				</section>
@@ -51,7 +53,6 @@ const WhatWeDo = () => {
 									In an emergency, Americares provides quality medical aid, disaster relief and
 									recovery.
 								</p>
-								<button className="text-yellow-500 font-bold text-4xl mt-7">Explore Now</button>
 							</div>
 						</div>
 						<div className="lg:flex items-center mb-16">
@@ -61,7 +62,6 @@ const WhatWeDo = () => {
 									Nearly 2 billion people in the world cannot get the medicines they need to stay
 									healthy.
 								</p>
-								<button className="text-yellow-500 font-bold text-4xl mt-7">Explore Now</button>
 							</div>
 							<div className="mt-10 lg:mt-0 lg:w-[70%]">
 								<img src={img5} alt="" />
@@ -78,7 +78,6 @@ const WhatWeDo = () => {
 									quality health services, preventing and treating illness while promoting good
 									health for each patient.
 								</p>
-								<button className="text-yellow-500 font-bold text-4xl mt-7">Explore Now</button>
 							</div>
 						</div>
 					</div>

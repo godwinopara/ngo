@@ -15,7 +15,7 @@ const Header = () => {
 			<nav className="px-5 lg:p-0 flex justify-between items-center max-w-[1400px] mx-auto ">
 				<div className="w-1/2 lg:w-[20%] py-3">
 					<Link to="/">
-						<img src={Logo} alt="" className="w-52" />
+						<img src={Logo} alt="" className="w-[50%]" />
 					</Link>
 				</div>
 
